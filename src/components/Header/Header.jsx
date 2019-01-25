@@ -76,7 +76,9 @@ class Header extends React.Component {
     });
     const brandComponent = (
       <Button className={classes.title} onClick={this.props.handleReset}>
-        An App By Branden LaCour
+        <Link className={classes.title} to="/">
+          An App By Branden LaCour
+        </Link>
       </Button>
     );
     return (

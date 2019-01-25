@@ -265,7 +265,7 @@ class LandingPage extends React.Component {
           color="transparent"
           routes={dashboardRoutes}
           brand="Material Kit React"
-          rightLinks={<HeaderLinks />}
+          rightLinks={<HeaderLinks handleReset={this.handleReset} />}
           fixed
           handleReset={this.handleReset}
           changeColorOnScroll={{
@@ -274,12 +274,12 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax medium filter image={require("assets/img/landing-bg.jpg")}>
+        <Parallax medium filter image={require("assets/img/weather.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Weather Time</h1>
-                <h4>Casting Dark Sky's Weather from Zeus</h4>
+                <h4>Casting The Weather from Zeus</h4>
                 <br />
                 {this.state.nav !== "Home" ? (
                   <h5>Click a day for more information!</h5>
@@ -295,7 +295,7 @@ class LandingPage extends React.Component {
               day={this.state.day}
               week={this.state.week}
               location={this.state.location}
-              handleRest={this.handleReset}
+              handleReset={this.handleReset}
               updateTest={this.updateTest}
               handleDayChoice={this.handleDayChoice}
               handleCityChange={this.handleCityChange}
