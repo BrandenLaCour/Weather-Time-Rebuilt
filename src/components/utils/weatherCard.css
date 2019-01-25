@@ -1,0 +1,5 @@
+#c1:hover {
+  transform: skewX(15deg);
+  transition-duration: 1s;
+  cursor: pointer;
+}
