@@ -13,14 +13,14 @@ const WeatherGrid = props => {
         {/* <WeatherCard className="col" /> */}
         {week.map(e => {
           return (
-            <div onClick={() => props.dayNav(e.day)}>
+            <div key={Math.random()} onClick={() => props.dayNav(e.day)}>
               <WeatherCard
                 className="col"
                 day={e.day}
                 high={e.high}
                 low={e.low}
                 cast={e.cast}
-                key={Math.random() * 9}
+                key={e.day}
               />
             </div>
           );

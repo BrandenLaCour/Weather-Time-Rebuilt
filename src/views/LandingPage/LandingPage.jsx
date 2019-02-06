@@ -11,7 +11,6 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import axios from "axios";
@@ -145,7 +144,7 @@ class LandingPage extends React.Component {
     const { data } = await axios.get(
       `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/bab642085489d446f31df424bdf3e506/${latLng}`
     );
-    console.log(data);
+
     const { data: allDays } = data.daily;
 
     let week = [...this.state.week];
@@ -209,7 +208,6 @@ class LandingPage extends React.Component {
   };
   // switch the location to the designated area
   updateTest = async () => {
-    console.log("ran");
     const name = this.state.location.name;
     const latLng = this.state.location.latLng;
     const { data } = await axios.get(
@@ -258,7 +256,7 @@ class LandingPage extends React.Component {
 
   render() {
     const { classes, ...rest } = this.props;
-    const loggedIn = true;
+
     return (
       <div>
         <Header

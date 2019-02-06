@@ -1,15 +1,11 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-import ReactDOM from "react-dom";
-import { withStyles } from "@material-ui/core/styles";
-import Input from "@material-ui/core/Input";
 
-import InputLabel from "@material-ui/core/InputLabel";
+import { withStyles } from "@material-ui/core/styles";
+
 import TextField from "@material-ui/core/TextField";
 import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
-import NativeSelect from "@material-ui/core/NativeSelect";
 
 const styles = theme => ({
   root: {
