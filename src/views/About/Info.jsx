@@ -26,10 +26,10 @@ class ProductSection extends React.Component {
                 rebuild it as my knowledge increased.
               </p>
               <p>
-                In the beggining, the app had pre-defined cities that you could
-                choose from, because dark sky requires lattitude and longitude
+                In the beginning, the app had pre-defined cities that you could
+                choose from, because dark sky requires latitude and longitude
                 coordinates. After a bit of digging, I found a forward geocoding
-                api that was able to convert city and town names, into lattitude
+                api that was able to convert city and town names, into latitude
                 and longitude coordinates. Hooray!
               </p>
               <p>
@@ -43,7 +43,7 @@ class ProductSection extends React.Component {
                 give me a full week layout of clickable icons.
               </p>
               <p>
-                I plan to continue developoment on this little project until it
+                I plan to continue development on this little project until it
                 has redux fully implemented as well!
               </p>
             </h5>
