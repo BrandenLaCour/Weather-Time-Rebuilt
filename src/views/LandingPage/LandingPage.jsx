@@ -141,9 +141,10 @@ class LandingPage extends React.Component {
   // get the default weather (chicago) from the api
   async componentDidMount() {
     const latLng = this.state.location.latLng;
-    const { data } = await axios.get(
-      `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/bab642085489d446f31df424bdf3e506/${latLng}`
+    const { data } = await axios.post(
+      `https://polar-tor-79067.herokuapp.com/`, {latLong: latLng}
     );
+    console.log('ran request')
 
     const { data: allDays } = data.daily;
 
@@ -210,8 +211,8 @@ class LandingPage extends React.Component {
   updateTest = async () => {
     const name = this.state.location.name;
     const latLng = this.state.location.latLng;
-    const { data } = await axios.get(
-      `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/bab642085489d446f31df424bdf3e506/${latLng}`
+    const { data } = await axios.post(
+      `https://polar-tor-79067.herokuapp.com/`, {latLong: latLng}
     );
 
     const { data: allDays } = data.daily;
