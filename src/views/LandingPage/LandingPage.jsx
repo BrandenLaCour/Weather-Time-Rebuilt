@@ -187,6 +187,7 @@ class LandingPage extends React.Component {
           e.target.value
         }&key=e638d072eb834206b9c751e351b6ce99`
       );
+    
       try {
         const geo = data.results[0].geometry;
         const city = data.results[0].components.city;
