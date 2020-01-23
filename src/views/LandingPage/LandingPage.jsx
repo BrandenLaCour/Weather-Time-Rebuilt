@@ -182,9 +182,11 @@ class LandingPage extends React.Component {
 
   handleCityChange = async e => {
     if (e.keyCode === 13) {
-      const { data } = await axios.post(
-      `https://polar-tor-79067.herokuapp.com/`, {city: e.target.value}
-    );
+      const { data } = await axios.get(
+        `https://api.opencagedata.com/geocode/v1/json?q=${
+          e.target.value
+        }&key=e638d072eb834206b9c751e351b6ce99`
+      );
     
       try {
         const geo = data.results[0].geometry;
