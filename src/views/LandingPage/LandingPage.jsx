@@ -185,7 +185,7 @@ class LandingPage extends React.Component {
       const { data } = await axios.get(
         `https://api.opencagedata.com/geocode/v1/json?q=${
           e.target.value
-        }&key=7ca85273b7674386bb62871692d50432`
+        }&key=e638d072eb834206b9c751e351b6ce99`
       );
       try {
         const geo = data.results[0].geometry;
