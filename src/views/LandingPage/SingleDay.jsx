@@ -4,7 +4,7 @@ const SingleDay = props => {
   const week = [
     "Monday",
     "Tuesday",
-    "Wednsday",
+    "Wednesday",
     "Thurdsday",
     "Friday",
     "Saturday",
